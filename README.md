@@ -1,0 +1,2 @@
+# schema_controlled_comparison_112a693a
+（AIGC场景）函数调用的 schema 校验的复现条件与可验证性这个指标本身可解释吗？用结构与协议校验拆解它由哪些可观测成分构成。
