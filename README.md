@@ -1,4 +1,4 @@
-# schema_controlled_comparison_112a693a
+# function_call_schema_ab_comparison
 
 （AIGC场景）函数调用的 schema 校验的复现条件与可验证性这个指标本身可解释吗？用结构与协议校验拆解它由哪些可观测成分构成。
 
@@ -15,9 +15,9 @@
 仅依赖 Python 标准库。
 
 ```bash
-python schema_controlled_comparison_112a693a.py --help
-python schema_controlled_comparison_112a693a.py --input sample.txt
-python schema_controlled_comparison_112a693a.py --input sample.txt --json
+python function_call_schema_ab_comparison.py --help
+python function_call_schema_ab_comparison.py --input sample.txt
+python function_call_schema_ab_comparison.py --input sample.txt --json
 ```
 
 输入文件按行解析。协议「对照实验」使用分隔符 `（无）` 区分标签与载荷。
@@ -50,7 +50,7 @@ python schema_controlled_comparison_112a693a.py --input sample.txt --json
 ## 复现步骤
 
 1. 按上面的分隔符准备输入文件，每行一条样本；
-2. 运行 `python schema_controlled_comparison_112a693a.py --input sample.txt --json`；
+2. 运行 `python function_call_schema_ab_comparison.py --input sample.txt --json`；
 3. 记录运行环境、输入文件与完整输出；
 4. **未运行的指标不要引用**：本仓库只提供测量方法与判定规则，
    不预填任何实测数字。填入实测值前请确认对应命令与输入一致。
